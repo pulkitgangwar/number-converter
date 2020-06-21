@@ -6,6 +6,19 @@
   "engines": {
     "vscode": "^1.46.0"
   },
+  "keywords": [
+    "number-converter",
+    "converter",
+    "number converter",
+    "convert to binary",
+    "binary convertion",
+    "decimal convertion",
+    "number convertion",
+    "binary",
+    "decimal",
+    "hexadecimal",
+    "octal"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/pulkitgangwar/number-converter"
