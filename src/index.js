@@ -1,23 +1,23 @@
-const vscode = require("vscode");
-
+const binaryToDecimalCmd = require("./extensionCommands/binaryToDecimalCmd");
+const decimalToBinaryCmd = require("./extensionCommands/decimalToBinaryCmd");
+const decimalToHexaCmd = require("./extensionCommands/decimalToHexaCmd");
+const hexaToDecimalCmd = require("./extensionCommands/hexaToDecimalCmd");
+const decimalToOctalCmd = require("./extensionCommands/decimalToOctalCmd");
+const octalToDecimalCmd = require("./extensionCommands/octalToDecimalCmd");
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
   console.log(
-    'Congratulations, your extension "number-converter" is now active!'
+    'Congratulations, your extension "digitalelectronics" is now active!'
   );
 
-  let disposable = vscode.commands.registerCommand(
-    "number-converter.helloWorld",
-    function () {
-      vscode.window.showInformationMessage(
-        "Hello World from number-converter!"
-      );
-    }
-  );
-
-  context.subscriptions.push(disposable);
+  context.subscriptions.push(binaryToDecimalCmd);
+  context.subscriptions.push(decimalToBinaryCmd);
+  context.subscriptions.push(decimalToHexaCmd);
+  context.subscriptions.push(hexaToDecimalCmd);
+  context.subscriptions.push(decimalToOctalCmd);
+  context.subscriptions.push(octalToDecimalCmd);
 }
 exports.activate = activate;
 
