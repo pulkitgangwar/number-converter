@@ -1,4 +1,4 @@
-const octalRegex = /^[0-9]{1,}(\.[0-9]{1,})?$/;
+const octalRegex = /^[0-7]{1,}(\.[0-7]{1,})?$/;
 
 const convertOctalToDecimal = (number) => {
   if (!octalRegex.test(number)) {
