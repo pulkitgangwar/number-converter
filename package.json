@@ -17,7 +17,7 @@
     "onCommand:number-converter.convertDecimalToOctal",
     "onCommand:number-converter.convertOctalToDecimal"
   ],
-  "main": "./extension.js",
+  "main": "./src/index.js",
   "contributes": {
     "commands": [
       {
