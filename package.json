@@ -34,7 +34,9 @@
     "onCommand:number-converter.convertDecimalToHexa",
     "onCommand:number-converter.convertHexaToDecimal",
     "onCommand:number-converter.convertDecimalToOctal",
-    "onCommand:number-converter.convertOctalToDecimal"
+    "onCommand:number-converter.convertOctalToDecimal",
+    "onCommand:number-converter.convertBinaryToHexa",
+    "onCommand:number-converter.convertHexaToBinary"
   ],
   "main": "./src/index.js",
   "contributes": {
@@ -62,6 +64,14 @@
       {
         "command": "number-converter.convertOctalToDecimal",
         "title": "Convert Octal To Decimal"
+      },
+      {
+        "command": "number-converter.convertBinaryToHexa",
+        "title": "Convert Binary To Hexadecimal"
+      },
+      {
+        "command": "number-converter.convertHexaToBinary",
+        "title": "Convert Hexadecimal To Binary"
       }
     ]
   },
