@@ -6,6 +6,8 @@ const decimalToOctalCmd = require("./extensionCommands/decimalToOctalCmd");
 const octalToDecimalCmd = require("./extensionCommands/octalToDecimalCmd");
 const binaryToHexaCmd = require("./extensionCommands/binaryToHexaCmd");
 const hexaToBinaryCmd = require("./extensionCommands/hexaToBinaryCmd");
+const binaryToOctalCmd = require("./extensionCommands/binaryToOctalCmd");
+const octalToBinaryCmd = require("./extensionCommands/octalToBinaryCmd");
 /**
  * @param {vscode.ExtensionContext} context
  */
@@ -22,6 +24,8 @@ function activate(context) {
   context.subscriptions.push(octalToDecimalCmd);
   context.subscriptions.push(binaryToHexaCmd);
   context.subscriptions.push(hexaToBinaryCmd);
+  context.subscriptions.push(binaryToOctalCmd);
+  context.subscriptions.push(octalToBinaryCmd);
 }
 exports.activate = activate;
 
